@@ -28,7 +28,7 @@ External services
 ## Structure
 
 ```<text>
-├── /services/                      # Each of service has his own structure
+├── /services/                      # Services's folder
 │   ├── /api/                       # AppSync GraphQL
 |   │   ├── /data-sources/          # Data sources
 |   │   ├── /mapping-templates/     # Mapping templates
