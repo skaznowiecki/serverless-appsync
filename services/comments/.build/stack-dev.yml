@@ -1,0 +1,3 @@
+CommentsTableArn: 'arn:aws:dynamodb:us-east-1:686165858056:table/Comments.dev'
+CommentsTableName: Comments.dev
+ServerlessDeploymentBucketName: comments.dev.deploys.blog

@@ -1,0 +1,3 @@
+type Subscription {
+  createdPost: Post @aws_subscribe(mutations: ["createPost"])
+}

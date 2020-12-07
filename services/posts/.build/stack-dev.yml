@@ -1,0 +1,6 @@
+AlgoliaPostsQueueArn: 'https://sqs.us-east-1.amazonaws.com/686165858056/blog-dev-posts-algolia-posts'
+SearchPostsLambdaFunctionArn: 'arn:aws:lambda:us-east-1:686165858056:function:posts-dev-searchPosts'
+PostsTableName: Posts.dev
+PostsTableArn: 'arn:aws:dynamodb:us-east-1:686165858056:table/Posts.dev'
+SearchPostsIamRoleArn: 'arn:aws:iam::686165858056:role/posts-dev-us-east-1-lambdaRole'
+ServerlessDeploymentBucketName: posts.dev.deploys.blog

@@ -1,0 +1,51 @@
+type User implements Entity {
+  id: ID!
+  email: String!
+  posts(limit: Int, nextToken: String): PostConnection
+  postCount: Int!
+  createdAt: AWSDateTime!
+}
+
+type Post implements Entity @aws_api_key @aws_cognito_user_pools {
+  id: ID!
+  likeCount: Int!
+  commentCount: Int!
+  comments(limit: Int, nextToken: String): CommentConnection
+  likes(limit: Int, nextToken: String): LikeConnection
+  liked: Boolean!
+  owner: User!
+  text: String!
+  title: String!
+  createdAt: AWSDateTime!
+}
+
+type PostConnection @aws_api_key @aws_cognito_user_pools {
+  items: [Post!]
+  nextToken: String
+}
+
+type Comment implements Entity @aws_api_key @aws_cognito_user_pools {
+  id: ID!
+  likeCount: Int!
+  likes(limit: Int, nextToken: String): LikeConnection
+  liked: Boolean!
+  post: Post!
+  owner: User!
+  text: String!
+  createdAt: AWSDateTime!
+}
+
+type CommentConnection @aws_api_key @aws_cognito_user_pools {
+  items: [Comment!]
+  nextToken: String
+}
+
+type Like @aws_api_key @aws_cognito_user_pools {
+  owner: User!
+  createdAt: AWSDateTime!
+}
+
+type LikeConnection @aws_api_key @aws_cognito_user_pools {
+  items: [Like!]
+  nextToken: String
+}

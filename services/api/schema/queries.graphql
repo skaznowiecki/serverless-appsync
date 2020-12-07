@@ -1,0 +1,10 @@
+type Query {
+  searchPosts(search: String, nextToken: String): PostConnection
+    @aws_api_key
+    @aws_cognito_user_pools
+  listPosts(limit: Int, nextToken: String): PostConnection
+    @aws_api_key
+    @aws_cognito_user_pools
+  getPost(id: ID!): Post @aws_api_key @aws_cognito_user_pools
+  getUser(id: ID!): User @aws_api_key @aws_cognito_user_pools
+}

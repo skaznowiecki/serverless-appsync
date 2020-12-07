@@ -1,0 +1,15 @@
+{
+    "version" : "2017-02-28",
+    "operation" : "PutItem",
+    "key" : {
+        "id": $util.dynamodb.toDynamoDBJson($util.autoId()),
+    },
+    "attributeValues" : {
+        "owner": $util.dynamodb.toDynamoDBJson($context.identity.username),
+        "postId": $util.dynamodb.toDynamoDBJson($ctx.args.postId),
+        "status": $util.dynamodb.toDynamoDBJson("published"),
+        "text": $util.dynamodb.toDynamoDBJson($ctx.args.input.text),
+        "likeCount": $util.dynamodb.toDynamoDBJson(0),
+        "createdAt": $util.dynamodb.toDynamoDBJson($util.time.nowISO8601())
+    }
+}

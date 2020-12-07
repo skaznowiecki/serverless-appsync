@@ -1,0 +1,9 @@
+enum PostStatus {
+  published
+  banned
+}
+
+enum LikeEntityName {
+  post
+  comment
+}

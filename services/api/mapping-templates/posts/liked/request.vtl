@@ -1,0 +1,15 @@
+{
+    "version" : "2017-02-28",
+    "operation" : "Query",
+    "query" : {
+        "expression": "#ID = :id AND #OWNER = :owner",
+        "expressionNames": {
+            "#ID": "id",
+            "#OWNER": "owner"
+        },
+        "expressionValues" : {
+            ":id" : $util.dynamodb.toDynamoDBJson("$ctx.source.id"),
+            ":owner" : $util.dynamodb.toDynamoDBJson("$ctx.identity.username")
+        }
+    }
+}

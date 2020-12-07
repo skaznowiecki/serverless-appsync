@@ -1,0 +1,3 @@
+AuthUserPoolId: us-east-1_7bEpDdBFU
+AuthUserPoolArn: 'arn:aws:cognito-idp:us-east-1:686165858056:userpool/us-east-1_7bEpDdBFU'
+ServerlessDeploymentBucketName: auth.dev.deploys.blog

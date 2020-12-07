@@ -1,0 +1,11 @@
+type Mutation @aws_cognito_user_pools {
+  createLike(id: ID!, entityName: LikeEntityName!): String
+  deleteLike(id: ID!, entityName: LikeEntityName!): String
+
+  createPost(input: PostInput!): Post!
+  updatePost(id: ID!, input: PostUpdateInput!): Post!
+  deletePost(id: ID!): String
+
+  createComment(postId: String!, input: CommentInput!): Comment!
+  deleteComment(id: ID!): String
+}

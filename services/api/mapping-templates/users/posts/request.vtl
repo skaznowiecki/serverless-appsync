@@ -1,0 +1,17 @@
+{
+    "version" : "2017-02-28",
+    "operation" : "Query",
+    "index" : "byOwner",
+    "query" : {
+        "expression": "#O = :o",
+        "expressionNames": {
+            "#O": "owner",
+        },
+        "expressionValues" : {
+            ":o" : $util.dynamodb.toDynamoDBJson("$ctx.source.id")
+        },
+    },
+    "scanIndexForward": false,
+    "limit": $util.defaultIfNull(${ctx.args.limit}, 20),
+    "nextToken": $util.toJson($util.defaultIfNullOrBlank($ctx.args.nextToken, null))
+}

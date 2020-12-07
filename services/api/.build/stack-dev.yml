@@ -1,0 +1,4 @@
+GraphQlApiUrl: 'https://6pfmugvcbbejnfh7r7uj7bktpa.appsync-api.us-east-1.amazonaws.com/graphql'
+GraphQlApiKeyDefault: da2-fxakcem4xnfilcmhmufv5dq23a
+GraphQlApiId: bnldtr2gnbd53npoqvcpumojvi
+ServerlessDeploymentBucketName: api.dev.deploys.blog

@@ -1,0 +1,3 @@
+{
+  "index": "Posts.${self:provider.stage}"
+}

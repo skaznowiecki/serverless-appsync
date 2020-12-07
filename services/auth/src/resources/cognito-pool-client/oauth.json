@@ -1,0 +1,17 @@
+{
+  "dev": {
+    "CallbackURLs": ["http://localhost:3000/dashboard/"],
+    "DefaultRedirectURI": "http://localhost:3000/dashboard/",
+    "LogoutURLs": ["http://localhost:3000/dashboard/"]
+  },
+  "staging": {
+    "CallbackURLs": ["http://localhost:3000/dashboard/"],
+    "DefaultRedirectURI": "http://localhost:3000/dashboard/",
+    "LogoutURLs": ["http://localhost:3000/dashboard/"]
+  },
+  "prod": {
+    "CallbackURLs": ["http://localhost:3000/dashboard/"],
+    "DefaultRedirectURI": "http://localhost:3000/dashboard/",
+    "LogoutURLs": ["http://localhost:3000/dashboard/"]
+  }
+}

@@ -1,0 +1,13 @@
+input PostInput {
+  title: String!
+  text: String!
+}
+
+input PostUpdateInput {
+  title: String
+  text: String
+}
+
+input CommentInput {
+  text: String!
+}

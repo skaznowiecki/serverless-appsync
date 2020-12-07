@@ -1,0 +1,3 @@
+LikesTableArn: 'arn:aws:dynamodb:us-east-1:686165858056:table/Likes.dev'
+LikesTableName: Likes.dev
+ServerlessDeploymentBucketName: likes.dev.deploys.blog
