@@ -1,6 +1,6 @@
 import { Resources } from "serverless/aws";
-import { dynamoDBServiceRole } from "./dynamodb-service-role";
-import { lambdaServiceRole } from "./lambda-service-role";
+import { dynamoDBServiceRole } from "./dynamodb-role/definition";
+import { lambdaServiceRole } from "./lambda-role/definition";
 
 export const resources: Resources = {
   Resources: {

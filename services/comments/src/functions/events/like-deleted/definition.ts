@@ -1,7 +1,7 @@
 import { dynamodbComments } from "../../../resources/dynamodb-comments/references";
-import { AwsIamFunction } from "../../../../../../utils/serverless/aws-iam-function";
 import configuration from "../../../../../../configuration";
 import { IEvent } from "../../../../../../types/events/event";
+import { AwsIamFunction } from "../../../../../../types/serverless/aws-iam-function";
 
 export const likeDeleted: AwsIamFunction = {
   handler: "src/functions/events/like-deleted/index.handler",

@@ -1,7 +1,7 @@
 import { SQS } from "aws-sdk";
 const sqs = new SQS();
 
-export const deleteSQSMessage = async (
+export const deleteMessage = async (
   receiptHandle: string,
   queueUrl: string
 ): Promise<{}> => {

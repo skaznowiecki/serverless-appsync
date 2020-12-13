@@ -1,7 +1,7 @@
-import { AwsIamFunction } from "../../../../../../utils/serverless/aws-iam-function";
 import configuration from "../../../../../../configuration";
 import { dynamodbPosts } from "../../../resources/dynamodb-posts/references";
 import { IEvent } from "../../../../../../types/events/event";
+import { AwsIamFunction } from "../../../../../../types/serverless/aws-iam-function";
 
 export const commentCreated: AwsIamFunction = {
   handler: "src/functions/events/comment-created/index.handler",

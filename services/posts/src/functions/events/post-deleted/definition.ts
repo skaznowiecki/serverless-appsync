@@ -1,7 +1,7 @@
-import { AwsIamFunction } from "../../../../../../utils/serverless/aws-iam-function";
 import { sqsAlgoliaPosts } from "../../../resources/sqs-algolia-posts/references";
 import configuration from "../../../../../../configuration";
 import { IEvent } from "../../../../../../types/events/event";
+import { AwsIamFunction } from "../../../../../../types/serverless/aws-iam-function";
 
 export const postDeleted: AwsIamFunction = {
   handler: "src/functions/events/post-deleted/index.handler",

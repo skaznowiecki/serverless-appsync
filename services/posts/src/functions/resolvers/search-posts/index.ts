@@ -1,9 +1,10 @@
 import SearchPostRequest from "./request";
 import SearchPostResponse from "./response";
-import { resolverHandler } from "../../../../../../utils/lib/resolver/resolver-handler";
 import { algoliaSearch } from "../../../lib/algolia/search/index";
 
-export const handler = resolverHandler<SearchPostRequest>(
+import { AppSync } from "../../../../../../utils/app-sync";
+
+export const handler = AppSync.handler<SearchPostRequest>(
   async (event): Promise<SearchPostResponse> => {
     const { query, nextToken, limit } = event.arguments;
     const perPage = limit || 100;

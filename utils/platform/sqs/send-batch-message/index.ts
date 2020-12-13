@@ -1,10 +1,10 @@
 import { SQS } from "aws-sdk";
-import { chunkArray } from "../../functions/chunk-array/index";
+import { chunkArray } from "../../../helpers/chunk-array/index";
 
 const sqs = new SQS();
 const MAX_MESSAGE_PER_BATCH = 10;
 
-export const sendBatchMessageToSQS = async <T>(
+export const sendBatchMessage = async <T>(
   items: T | T[],
   queueUrl: string
 ): Promise<Array<SQS.SendMessageBatchResult>> => {

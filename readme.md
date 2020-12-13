@@ -59,6 +59,8 @@ External services
 |   │   ├── webpack.config.js       # Webpack configuration
 |   │   ├── package.json            # Dependences
 |   │   ├── tsconfig.json           # TS configuration
+├── /types/                         # Common types
+├── /utils/                         # Common functions
 └── configuration.ts                # General configuration
 
 ```

@@ -9,12 +9,9 @@ import { likeDeleted } from "./like-deleted/definition";
 export const eventFunctions: Functions = {
   "post-created": postCreated,
   "post-deleted": postDeleted,
-
   "comment-created": commentCreated,
   "comment-deleted": commentDeleted,
-
   "like-created": likeCreated,
   "like-deleted": likeDeleted,
-
   "algolia-posts-queued": algoliaPostsQueued,
 };

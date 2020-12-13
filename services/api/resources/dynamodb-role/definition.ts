@@ -1,8 +1,8 @@
 import { Resources } from "serverless/aws";
-import { postsTableExports } from "../../../types/exports/posts/posts-table";
-import { usersTableExports } from "../../../types/exports/users/users-table";
-import { commentsTableExports } from "../../../types/exports/comments/posts-table";
-import { likesTableExports } from "../../../types/exports/likes/likes-table";
+import { postsTableExports } from "../../../../types/exports/posts/posts-table";
+import { usersTableExports } from "../../../../types/exports/users/users-table";
+import { commentsTableExports } from "../../../../types/exports/comments/posts-table";
+import { likesTableExports } from "../../../../types/exports/likes/likes-table";
 
 export const dynamoDBServiceRole: Resources = {
   Resources: {
